@@ -1,16 +1,17 @@
+import Profile from './social-profile/Profile'
+import user from './social-profile/user.json';
+import data from "./Statistics/data.json"
+import Statistics from './Statistics/StatisticsListItem';
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Profile
+      userName={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    />
   );
 };
