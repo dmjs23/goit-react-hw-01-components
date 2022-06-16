@@ -1,9 +1,10 @@
 import FriendsListItem from './FriendsListItem';
+import style from './FriendsList.module.css'
 
 const FriendsList = ({ friends }) => (
   <>
-    <section className="Friends">
-      <ul className="friend-list">
+    <section className={style.Friends}>
+      <ul className={style.friend_list}>
         {friends.map(friend => {
           const { avatar, name, isOnline, id } = friend;
 

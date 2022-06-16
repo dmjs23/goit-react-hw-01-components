@@ -1,10 +1,11 @@
 import StatisticsListItem from './StatisticsListItem';
+import style from './Statistics.module.css'
 
 const StatisticsList = ({ dataList }) => (
   <>
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
-      <ul className="stat-list">
+    <section className={style.statistics}>
+      <h2 className={style.title}>Upload stats</h2>
+      <ul className={style.stat_list}>
         {dataList.map(data => {
           const { id, label, percentage } = data;
           return (
